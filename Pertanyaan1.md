@@ -18,3 +18,5 @@ tampilkanInformasi() — menampilkan seluruh data mahasiswa ke layar
 ubahKelas(String kelasBaru) — mengubah kelas mahasiswa dengan nilai baru
 updateIpk(double ipkBaru) — memperbarui nilai IPK mahasiswa
 nilaiKinerja() — mengembalikan keterangan kinerja mahasiswa berdasarkan nilai IPK
+5. Cara Kerja Method nilaiKinerja()
+Method nilaiKinerja() bekerja dengan cara membaca nilai atribut ipk yang dimiliki object, lalu mengevaluasinya menggunakan struktur percabangan if-else if-else secara berurutan dari nilai tertinggi ke terendah.
