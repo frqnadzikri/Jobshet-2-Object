@@ -17,12 +17,11 @@ public class Mahasiswa15 {
     }
 
     void tampilkanInformasi() {
-        System.out.println("Nama: " + nama);
-        System.out.println("NIM: " + nim);
-        System.out.println("IPK: " + ipk);
-        System.out.println("Kelas: " + kelas);
+        System.out.println("Nama  : " + nama);
+        System.out.println("NIM   : " + nim);
+        System.out.println("IPK   : " + ipk);
+        System.out.println("Kelas : " + kelas);
     }
-
 
     void ubahKelas(String kelasBaru) {
         kelas = kelasBaru;
