@@ -23,22 +23,16 @@ public class Mahasiswa15 {
         System.out.println("Kelas: " + kelas);
     }
 
-    public static void main(String[] args) {
 
-        // Menggunakan konstruktor default
-        Mahasiswa15 mhs1 = new Mahasiswa15();
-        mhs1.nama = "Budi";
-        mhs1.nim = "12345678";
-        mhs1.ipk = 3.5;
-        mhs1.kelas = "TI-A";
+    void ubahKelas(String kelasBaru) {
+        kelas = kelasBaru;
+    }
 
-        System.out.println("=== Data Mahasiswa 1 ===");
-        mhs1.tampilkanInformasi();
-
-        // Menggunakan konstruktor berparameter
-        Mahasiswa15 mhs2 = new Mahasiswa15("Siti", "87654321", 3.8, "TI-B");
-
-        System.out.println("\n=== Data Mahasiswa 2 ===");
-        mhs2.tampilkanInformasi();
+    void updateIpk(double ipkBaru) {
+        if (ipkBaru >= 0.0 && ipkBaru <= 4.0) {
+            ipk = ipkBaru;
+        } else {
+            System.out.println("IPK tidak valid!");
+        }
     }
 }
